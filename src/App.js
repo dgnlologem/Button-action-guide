@@ -1,25 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import ButtonAction from "./components/ButtonAction";
+import styled from "styled-components"
+import ButtonActionGray from "./components/ButtonActionGray";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container >
+     <ButtonActionGray/>
+    </Container>
   );
 }
 
 export default App;
+
+export const Container =styled.div`
+  width:100vh;
+  height:100vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    `
+;
