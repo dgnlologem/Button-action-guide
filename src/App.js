@@ -16,7 +16,7 @@ function App() {
 
   return (
     <Container >
-        <ButtonAction text={'Button'}/>
+        <ButtonAction text={'Button'} onClick={click} />
     </Container>
   );
 }

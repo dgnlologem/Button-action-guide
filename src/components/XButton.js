@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 function XButton(props){
     return(
         <Button onClick={props.onClick}>
-            <Img src={'/icon-avatarsetting.png'} alt={'나가기'}></Img>
+            <Img src={'/icon_close.png'} alt={'나가기'}></Img>
         </Button>
     )
 }

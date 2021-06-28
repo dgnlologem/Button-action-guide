@@ -30,7 +30,7 @@ export const Text = styled.p`
   font-size: 15px;  
   font-weight: 500;
   letter-spacing: -0.44px;
-  margin: ${(props)=>props.direction==='next' ? '2px 5px 1px 0' : '1px 0 2px 5px'};
+  margin: ${(props)=>props.direction==='next' ? '0 5px 0 0' : '0 0 0 5px'};
   color: ${(props)=>props.direction ==='next' ? '#000000' : '#bebebe'};
   
   @media screen and (min-width:480px) {

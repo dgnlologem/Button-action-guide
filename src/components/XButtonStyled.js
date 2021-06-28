@@ -7,7 +7,7 @@ export const Button = styled.button`
   background-color: transparent;
   border:0px;
   padding:2px;
-
+  cursor: pointer;
   &:active {
     background-color: rgba(0, 0, 0, 0.1);
   };
@@ -19,7 +19,6 @@ export const Button = styled.button`
     &:hover{
       background-color: rgba(0, 0, 0, 0.1);
     };
-    
   };
   
 `;

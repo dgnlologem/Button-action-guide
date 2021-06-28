@@ -36,7 +36,7 @@ export const Img=styled.img`
 
 export const Text = styled.p`
   color:${(props)=>props.textColor};
-  margin:3px 0 0 3px;
+  margin:0 0 0 3px;
   font-family: 'AppleSDGothicNeo';
   font-weight: bold;
   font-stretch: normal;
@@ -45,7 +45,4 @@ export const Text = styled.p`
   letter-spacing: -0.41px;
   font-size:14px;
 
-  @media screen and (min-width:480px) {
-    margin:0 0 0 3px;
-  }
 `;
