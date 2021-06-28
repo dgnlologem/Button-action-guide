@@ -1,35 +1,27 @@
 import React from "react"
-import styled from "styled-components";
+import {Button } from "./ButtonActionStyled"
+import PropTypes from 'prop-types';
+
 
 function ButtonAction(props){
     return(
-        <Button onClick={props.onClick}>Button</Button>
+        <Button onClick={props.onClick} backgroundColor={props.backgroundColor} hoverColor={props.hoverColor} textColor={props.textColor}>{props.text}</Button>
     )
 }
 
+ButtonAction.propTypes={
+    text:PropTypes.string.isRequired,
+    onClick:PropTypes.func.isRequired,
+    backgroundColor:PropTypes.string,
+    hoverColor:PropTypes.string,
+    textColor:PropTypes.string,
+
+}
+
+ButtonAction.defaultProps={
+    backgroundColor:'#000000',
+    hoverColor:'#383838',
+    textColor:'#ffffff',
+}
 export default ButtonAction
 
-export const Button = styled.button`
-  padding:15px 44px 14px;
-  background-color: #000000;
-  font-family: 'AppleSDGothicNeo';
-  font-size:15px;
-  font-weight: bold;
-  color:#fff;
-  text-align: center;
-  letter-spacing: -0.44px;
-  border-radius:3px;
-  border:0px;
-  box-sizing: border-box;
-  cursor: pointer;
-
-  &:active {
-    background-color:#383838;
-  }
-  @media screen and (min-width: 480px) {
-    &:hover {
-      background-color:#383838;
-    }
-  }
-  
-`;
